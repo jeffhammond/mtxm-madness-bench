@@ -1,5 +1,5 @@
-CXX = /opt/intel/composer_xe_2015.3.187/bin/intel64/icpc
-CXXFLAGS  = -O3 -std=c++11 -qopenmp -mavx
+CXX = icpc
+CXXFLAGS  = -O3 -std=c++11 -qopenmp -xCORE-AVX2 -fp-model fast=2
 CXXFLAGS += -qopt-report=5
 
 INCLUDE = -I.
